@@ -45,7 +45,10 @@ const common = {
 			template: PATHS.src + '/main.html'
 		}),
 		new ExtractTextPlugin('./style.css')
-	]
+	],
+	devServer: {
+		port: 9000
+	}
 }
 
 const dev = merge(
