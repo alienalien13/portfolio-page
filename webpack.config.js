@@ -2,7 +2,8 @@ const webpack = require('webpack'),
 	path = require('path'),
 	HtmlPlugin = require('html-webpack-plugin'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
-	merge = require('webpack-merge')
+	merge = require('webpack-merge'),
+	UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const PATHS = {
 	src: path.join(__dirname, "src"),
@@ -17,15 +18,6 @@ const common = {
 	},
 	module: {
 		rules: [
-			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					use: [
-						//'style-loader',
-						'css-loader'
-					]
-				})
-			},
 			{
 				test: /\.(jpe?g|gif|png|svg)$/,
 				use: [
@@ -52,13 +44,53 @@ const common = {
 }
 
 const dev = merge(
-	common
+	common,
+	{
+		module: {
+			rules: [
+				{
+					test: /\.css$/,
+					use: ExtractTextPlugin.extract({
+						use: [
+							//'style-loader',
+							'css-loader'
+						]
+					})
+				}
+			]
+		}
+	}
 )
 
 const prod = merge(
-	common
+	common,
+	{
+		module: {
+			rules: [
+				{
+					test: /\.css$/,
+					use: ExtractTextPlugin.extract({
+						use: [
+							'css-loader',
+							'postcss-loader'
+						]
+					})
+				}
+			]
+		},
+		plugins: [
+			new UglifyJsPlugin({
+				comments: false
+			})
+		]
+	}
 )
 
-module.exports = function() {
-	return dev
+module.exports = function(env) {
+	if (env === 'development'){
+		return dev
+	} else if (env === 'production'){
+		return prod
+	}
+	
 }
