@@ -5,7 +5,15 @@
 	-moz-display: none;
 	-webkit-display: none;
 }*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, wrap, summary,time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption,tbody, tfoot, thead, tr, th,
+td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, wrap, summary,time, mark, audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,7 +31,8 @@ h1, h2, h3, .nav, nav{
 
 /* ----- Fonts ----- */
 body {
-	font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+	sans-serif;
 }
 
 /* ----- Navigation ----- */
@@ -75,7 +84,8 @@ header h2, footer h2{
 	color: #000;
 	text-transform: uppercase;
 	display: block;
-	border: 2px solid #000;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
 	background-color: #fff;
 }
 header nav li{
@@ -162,9 +172,22 @@ img{
 
 /* ----- Footer ----- */
 footer {
- 	background: -moz-linear-gradient(45deg, rgba(255,40,44,0.57) 0%, rgba(244,255,48,0.65) 33%, rgba(41,206,52,0.73) 68%, rgba(0,168,229,0.8) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(255,40,44,0.57) 0%,rgba(244,255,48,0.65) 33%,rgba(41,206,52,0.73) 68%,rgba(0,168,229,0.8) 100%);
-	background: linear-gradient(45deg, rgba(255,40,44,0.57) 0%,rgba(244,255,48,0.65) 33%,rgba(41,206,52,0.73) 68%,rgba(0,168,229,0.8) 100%);
+ 	background: -moz-linear-gradient(45deg,
+	 rgba(255,40,44,0.57) 0%,
+	 rgba(244,255,48,0.65) 33%,
+	 rgba(41,206,52,0.73) 68%,
+	 rgba(0,168,229,0.8) 100%);
+	background: -webkit-linear-gradient(45deg,
+	rgba(255,40,44,0.57) 0%,
+	rgba(244,255,48,0.65) 33%,
+	rgba(41,206,52,0.73) 68%,
+	rgba(0,168,229,0.8) 100%);
+	background: linear-gradient(45deg,
+	rgba(255,40,44,0.57) 0%,
+	rgba(244,255,48,0.65) 33%,
+	rgba(41,206,52,0.73) 68%,
+	rgba(0,168,229,0.8) 100%);
+	border-top: 2px solid #000;
 }
 footer p {
 	float: left;

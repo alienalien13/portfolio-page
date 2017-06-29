@@ -3,7 +3,8 @@ const webpack = require('webpack'),
 	HtmlPlugin = require('html-webpack-plugin'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
 	merge = require('webpack-merge'),
-	UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+	UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
+	ImageminPlugin = require('imagemin-webpack-plugin').default
 
 const PATHS = {
 	src: path.join(__dirname, "src"),
@@ -19,14 +20,6 @@ const common = {
 	module: {
 		rules: [
 			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					use: [
-						'css-loader'
-					]
-				})
-			},
-			{
 				test: /\.(jpe?g|gif|png|svg)$/,
 				use: [
 					{
@@ -41,8 +34,8 @@ const common = {
 	},
 	plugins: [
 		new HtmlPlugin({
-			filename: 'index.html',
-			template: PATHS.src + '/main.html'
+				filename: 'index.html',
+				template: PATHS.src + '/main.html'
 		}),
 		new ExtractTextPlugin('./style.css')
 	],
@@ -52,7 +45,21 @@ const common = {
 }
 
 const dev = merge(
-	common
+	common,
+	{
+		module: {
+			rules: [
+				{
+					test: /\.css$/,
+					use: ExtractTextPlugin.extract({
+						use: [
+							'css-loader'
+						]
+					})
+				}
+			]
+		}
+	}
 )
 
 const prod = merge(
@@ -72,8 +79,25 @@ const prod = merge(
 			]
 		},
 		plugins: [
+			new HtmlPlugin({
+				template: PATHS.src + '/main.html',
+				minify: {
+					collapseInlineTagWhitespace: true,
+					collapseWhitespace: true,
+					removeComments: true
+				}
+			}),
 			new UglifyJsPlugin({
 				comments: false
+			}),
+			new ImageminPlugin({
+				test: /\.(jpe?g|gif|png|svg)$/i,
+				optipng: {
+					optimizationLevel: 7
+				},
+				jpegtran: {
+					progressice: true
+				}
 			})
 		]
 	}
