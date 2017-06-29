@@ -19,6 +19,14 @@ const common = {
 	module: {
 		rules: [
 			{
+				test: /\.css$/,
+				use: ExtractTextPlugin.extract({
+					use: [
+						'css-loader'
+					]
+				})
+			},
+			{
 				test: /\.(jpe?g|gif|png|svg)$/,
 				use: [
 					{
@@ -44,22 +52,7 @@ const common = {
 }
 
 const dev = merge(
-	common,
-	{
-		module: {
-			rules: [
-				{
-					test: /\.css$/,
-					use: ExtractTextPlugin.extract({
-						use: [
-							//'style-loader',
-							'css-loader'
-						]
-					})
-				}
-			]
-		}
-	}
+	common
 )
 
 const prod = merge(
