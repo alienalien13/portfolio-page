@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "rimraf ./dist && webpack --env development --watch",
     "prod": "rimraf ./dist && webpack --env production",
-    "serv": "webpack-dev-server"
+    "serv": "webpack-dev-server --env development"
   },
   "devDependencies": {
     "css-loader": "^0.28.4",

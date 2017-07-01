@@ -1,10 +1,7 @@
-/* ----- CSS reset ----- */
-/*#about, #contacts {
+/*----- CSS reset -----*/
+#about, #contacts {
 	display: none;
-	-o-display: none;
-	-moz-display: none;
-	-webkit-display: none;
-}*/
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a,
 abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
@@ -33,6 +30,7 @@ h1, h2, h3, .nav, nav{
 body {
 	font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial,
 	sans-serif;
+	min-height: 100vh;
 }
 
 /* ----- Navigation ----- */
@@ -111,7 +109,7 @@ img{
 	background: #fff; 
 	border-radius: 3px;
 
-	min-height: 600px;
+	min-height: 100vh;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -127,7 +125,7 @@ img{
 	flex: 1 1 25%;
 	transition: box-shadow .5s;
 }
-.projects a:visited{
+.projects a, .projects a:visited{
 	color: black;
 }
 .projects:hover {
@@ -146,29 +144,23 @@ img{
 }
 /* - - - - - END - - - - - */
 
-/*#about {
+#about, #contacts {
 	width: 100%;
-	height: 500px;
+	height: calc(100vh - 410px);
+	min-height: 170px;
 	display: none;
 }
-#contacts {
-	width: 100%;
-	height: 500px;
-	display: none;
-}
-#about ul {
-	width: 818px;
+#about p{
+	width: 100px;
 	margin: auto;
-}
-#about ul li {
-	display: inline-block;
-	height: 500px;
 }
 .vcard {
-	padding-top: 10%;
 	width: 243px;
 	margin: auto;
-}*/
+}
+#about p, .vcard{
+	padding-top: 4%;
+}
 
 /* ----- Footer ----- */
 footer {

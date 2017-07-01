@@ -40,6 +40,8 @@ const common = {
 		new ExtractTextPlugin('./style.css')
 	],
 	devServer: {
+		contentBase: path.join(__dirname, "dist"),
+		compress: true,
 		port: 9000
 	}
 }
@@ -109,5 +111,4 @@ module.exports = function(env) {
 	} else if (env === 'production'){
 		return prod
 	}
-	
 }
