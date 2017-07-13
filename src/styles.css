@@ -110,7 +110,7 @@ header h2, footer h2{
 	transition: color .5s;
 }
 header h2:hover{
-	color: var(--color3);
+/* 	color: var(--color2); */
 	cursor: default;
 }
 header nav li{
