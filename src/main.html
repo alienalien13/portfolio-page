@@ -15,106 +15,118 @@
 <body>
 
 	<header class="containers">
+
 		<nav>
 			<h1>Ilhanaiev Dmytro</h1>
 			<ul>
 				<li id="homeBut"><div class="nav">Home</div></li><!----><li id="aboutBut"><div class="nav">About</div></li><!----><li id="contactBut"><div class="nav">Contact</div></li>
 			</ul>
 		</nav>
+
 		<h2 class="atricle">my portfolio</h2>
+
 	</header>
 
-		<div id="about">
-					<p>Info is coming</p>
-		</div>
+	<div id="about"><p>Info is coming</p></div>
 
-		<div id="contacts">
-			<div class="vcard">
-				<div class="adr">
-					<div>
-						<span class="locality">Brno</span>
-					</div>
-					<div class="country-name">Czech Republic</div>
+	<div id="contacts">
+		<div class="vcard">
+			<div class="adr">
+				<div>
+					<span class="locality">Brno</span>
 				</div>
-				<div>phone number: <span class="tel">+420 776 042 607</span></div>
-				<div>e-mail: <span class="email">ilhanaiev.dmytro@email.cz</span></div>
+				<div class="country-name">Czech Republic</div>
 			</div>
+			<div>phone number: <span class="tel">+420 776 042 607</span></div>
+			<div>e-mail: <span class="email">ilhanaiev.dmytro@email.cz</span></div>
 		</div>
+	</div>
+	
+	<div class="main" id="list">
+
+		<div class="projects"><a href="projects/sort-comments/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/sort-comments.png")%> alt="">
+				<div class="text">
+					<h3>React app</h3><br>
+					<p>Addition and sorting comments React application. Using React + Babel and Bootstrap4 + React-Bootstrap + FontAwesome styling</p>
+				</div>
+			</div>
+		</a></div>
+
+		<div class="projects"><a href="projects/lipaForm/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/lipaForm.png")%> alt="">
+				<div class="text">
+					<h3>Subscribe form</h3><br>
+					<p>Forms validation via just javascript. Css animation and FontAwesome icons</p>
+				</div>
+			</div>
+		</a></div>
+
+		<div class="projects"><a href="projects/landingfirm/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/landingfirm.png")%> alt="">
+				<div class="text">
+					<h3>Firm Webpage</h3><br>
+					<p>Concept landing page for commercial firm. Including jQuery swiping, form validations via Html5 attributes. Also here is playing video just by javascript excluding html5 resources</p>
+				</div>
+			</div>
+		</a></div>
+
+		<div class="projects"><a href="projects/rocketmen/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/rocketmen.png")%> alt="">
+				<div class="text">
+					<h3>Experimental app with adding and editing option</h3><br>
+					<p>Application includes text-forms with javascript validation to add info and table with option to edit datas. Whole the application maked just by javascript, no js frameworks</p>
+				</div>
+			</div>
+		</a></div>
+
+		<div class="projects"><a href="projects/tattoo/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/tattoo.png")%> alt="">
+				<div class="text">
+					<h3>Landing page for tattoo artist Daria</h3><br>
+					<p>Using jQuery for photo gallery and animation, including CSS animation</p>
+				</div>
+			</div>
+		</a></div>
+
 		
-		<div class="main" id="list">
-			<div class="projects prN1"><a href="projects/booksmedia/index.html" class="link">
-					<div class="image">
-						<img src=<%=require("./images/img1.png")%> alt="">
-						<div class="text">
-							<h3>Website concept for media</h3><br>
-							<p>Using html5 to playing media files</p>
-						</div>
-					</div>
-				</a></div>
-			<div class="projects prN2"><a href="projects/lipaForm/index.html" class="link">
-					<div class="image">
-						<img src=<%=require("./images/img2.png")%> alt="">
-						<div class="text">
-							<h3>Subscribe form</h3><br>
-							<p>Forms validation via javascript. Css animation and font-awesome icons</p>
-						</div>
-					</div>
-				</a></div>
-			<div class="projects prN3"><a href="projects/landingfirm/index.html" class="link">
-					<div class="image">
-						<img src=<%=require("./images/img3.png")%> alt="">
-						<div class="text">
-							<h3>Firm Webpage</h3><br>
-							<p>Concept landing page for commercial firm. Including jQuery swiping, form validations via html5 attributes. Also here is playing video just by javascript excluding html5 resources</p>
-						</div>
-					</div>
-				</a></div>
-			<div class="projects prN4"><a href="projects/rocketmen/index.html" class="link">
-					<div class="image">
-						<img src=<%=require("./images/img4.png")%> alt="">
-						<div class="text">
-							<h3>Experimental app with adding and editing option</h3><br>
-							<p>Application includes text-forms with js validation to add info and table with option to edit datas</p>
-						</div>
-					</div>
-				</a></div>
-			<div class="projects prN5"><a href="projects/tattoo/index.html" class="link">
-					<div class="image">
-						<img src=<%=require("./images/img5.png")%> alt="">
-						<div class="text">
-							<h3>Landing page for tattoo artist Daria</h3><br>
-							<p>Using jQuery for photo gallery and animation, including CSS animation</p>
-						</div>
-					</div>
-				</a></div>
-			<div class="projects prN6"><a href="projects/trialsite/index.html" class="link">
-					<div class="image">
-						<img src=<%=require("./images/img6.png")%> alt="">
-						<div class="text">
-							<h3>Classic site concept</h3><br>
-							<p>Just simple website concept includs experiment regarding css pictures options</p>
-						</div>
-					</div>
-				</a></div>
-			<div class="projects prN7"><a href="projects/table/index.html" class="link">
-				<div class="image">
-					<img src=<%=require("./images/img7.png")%> alt="">
-					<div class="text">
-						<h3>Lite offer table</h3><br>
-						<p>Lite style table using Bootstrap3 and @keyframes animation</p>
-					</div>
+
+		<div class="projects"><a href="projects/table/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/table.png")%> alt="">
+				<div class="text">
+					<h3>Lite offer table</h3><br>
+					<p>Lite style table using Bootstrap3 and @keyframes animation</p>
 				</div>
-			</a></div>
-			<div class="projects prN8"><a href="projects/adoptly/index.html" class="link">
-				<div class="image">
-					<img src=<%=require("./images/img8.png")%> alt="">
-					<div class="text">
-						<h3>First step with React</h3><br>
-						<p>First attempt working with React. Content insertion. Page template: Adoptly by Sonya Moisset</p>
-					</div>
+			</div>
+		</a></div>
+
+		<div class="projects"><a href="projects/adoptly/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/adoptly.png")%> alt="">
+				<div class="text">
+					<h3>First step with React</h3><br>
+					<p>First attempt working with React. Content insertion. Page template: Adoptly by Sonya Moisset</p>
 				</div>
-			</a></div>
-		</div>
+			</div>
+		</a></div>
+
+		<div class="projects"><a href="projects/booksmedia/index.html" class="link">
+			<div class="image">
+				<img src=<%=require("./images/booksmedia.png")%> alt="">
+				<div class="text">
+					<h3>Website concept for media</h3><br>
+					<p>Using Html5 to playing media files</p>
+				</div>
+			</div>
+		</a></div>
+		
+	</div>
 	
 	<footer class="containers">
 		<nav>
