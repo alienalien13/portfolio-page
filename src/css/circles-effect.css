@@ -16,7 +16,7 @@
 .circles-off-wrap{
 	position: relative;
 	top: -63px;
-		z-index: 6;
+	z-index:6!important;
 }
 .circles-off{
 	margin: 0 27px;

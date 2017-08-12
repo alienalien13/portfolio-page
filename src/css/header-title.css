@@ -16,7 +16,7 @@
 	left: calc(50% - 410px);
 	font-size: 6rem;
 	position: absolute;
-	z-index: 5;
+	z-index: 7 !important;
 }
 .title-op{
 	font-weight: 600;
