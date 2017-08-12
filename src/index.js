@@ -1,7 +1,7 @@
-import './styles.css'
-import './circles-effect.css'
-import './header-title.css'
-import './ilhan-op.css'
+import './css/styles.css'
+import './css/circles-effect.css'
+import './css/header-title.css'
+import './css/ilhan-op.css'
 
 var home = document.getElementById("list"),
 	about = document.getElementById("about"),
