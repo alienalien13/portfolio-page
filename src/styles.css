@@ -1,17 +1,7 @@
 :root{
---color1: #e5e6e6;
---color2: #808aa5;
---color3: #b8881c;
---color4: #181617;
---color5: #e5c45e;
---background1: rgba(229,230,230,1);
---background2: -moz-linear-gradient(left, rgba(229,230,230,1) 0%, rgba(127,126,127,1) 25%, rgba(24,22,23,0.56) 50%, rgba(76,80,94,1) 75%, rgba(128,138,165,1) 100%);
---background3: -webkit-gradient(left top, right top, color-stop(0%, rgba(229,230,230,1)), color-stop(25%, rgba(127,126,127,1)), color-stop(50%, rgba(24,22,23,0.56)), color-stop(75%, rgba(76,80,94,1)), color-stop(100%, rgba(128,138,165,1)));
---background4: -webkit-linear-gradient(left, rgba(229,230,230,1) 0%, rgba(127,126,127,1) 25%, rgba(24,22,23,0.56) 50%, rgba(76,80,94,1) 75%, rgba(128,138,165,1) 100%);
---background5: -o-linear-gradient(left, rgba(229,230,230,1) 0%, rgba(127,126,127,1) 25%, rgba(24,22,23,0.56) 50%, rgba(76,80,94,1) 75%, rgba(128,138,165,1) 100%);
---background6: -ms-linear-gradient(left, rgba(229,230,230,1) 0%, rgba(127,126,127,1) 25%, rgba(24,22,23,0.56) 50%, rgba(76,80,94,1) 75%, rgba(128,138,165,1) 100%);
---background7: linear-gradient(to right, rgba(229,230,230,1) 0%, rgba(127,126,127,1) 25%, rgba(24,22,23,0.56) 50%, rgba(76,80,94,1) 75%, rgba(128,138,165,1) 100%);
---filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e6e6', endColorstr='#808aa5', GradientType=1 );
+--color1: #e5bbef;
+--color2: #8ed3e8;
+--header-text-color: #4c3f77;
 }
 /*----- CSS reset -----*/
 #about, #contacts {
@@ -33,17 +23,14 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
-h1, h2, h3, .nav, nav{
-	font-family: 'Orbitron', sans-serif;
-}
 .containers {
 	margin: 0 auto;
-	min-width: 533px;
+	min-width: 464px;
 }
 
 /* ----- Fonts ----- */
 body {
-	font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+	font: 300 16px/22px "Verdana","Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial,
 	sans-serif;
 	min-height: 100vh;
 }
@@ -76,38 +63,43 @@ nav li:last-child {
 	background: #e5e6e6;
 	color: #000;
 }
+header .nav:hover {
+	background: #e5e6e6;
+	color: var(--header-text-color);
+}
+header .a:hover {
+	background: #e5e6e6;
+	color: var(--header-text-color);
+}
 /* ----- END ----- */
 
 /* ----- Header ----- */
 header{
 	text-align: center;
 	color: #000;
-	background: var(--background1);
-	background: var(--background2);
-	background: var(--background3);
-	background: var(--background4);
-	background: var(--background5);
-	background: var(--background6);
-	background: var(--background7);
-	filter: var(--filter);
+	background: var(--color1);
 }
 header h1, footer h1{
 	margin: 30px 55px;
 	font-size: 30px;
 	float: left;
+	color: #051126;
 }
 header h2, footer h2{
-	font-size: 50px;
-	padding: 100px;
-	font-weight: 600;
-	line-height: 0.8em;
-	color: #000;
+	font-size: 3rem;
+	padding: 40px;
+	color: var(--header-text-color);
 	text-transform: uppercase;
 	display: block;
-	border-top: 2px solid #000;
-	border-bottom: 2px solid #000;
-	background-color: #fff;
+	background-color: #8ed3e8;
+	border-bottom: 20px solid #8ed3e8;
 	transition: color .5s;
+}
+header h1{
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: var(--header-text-color);
+	font-weight: 600;
 }
 header h2:hover{
 /* 	color: var(--color2); */
@@ -149,14 +141,26 @@ img{
 	border:2px solid #ebebeb;
 	border-radius: 5px;
 	margin: 15px;
-	flex: 1 1 20%;
+	flex: 1 1 30%;
 	transition: box-shadow .5s;
 }
+
+@media (min-width: 1415px){
+	.projects{
+		padding: 5px;
+		border:2px solid #ebebeb;
+		border-radius: 5px;
+		margin: 15px;
+		flex: 1 1 40%;
+		transition: box-shadow .5s;
+	}
+}
+
 .projects a, .projects a:visited{
 	color: black;
 }
 .projects:hover {
-	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+	box-shadow: 0 0 20px rgba(76, 63, 119, 1);
 }
 .projects img{
 	width: 100%;
@@ -173,32 +177,25 @@ img{
 
 #about, #contacts {
 	width: 100%;
-	height: calc(100vh - 410px);
-	min-height: 170px;
 	display: none;
 }
 #about p{
-	width: 100px;
+	width: 117px;
 	margin: auto;
 }
 .vcard {
-	width: 243px;
+	width: 286px;
 	margin: auto;
+	text-align: center;
 }
 #about p, .vcard{
-	padding-top: 4%;
+	display: block;
+	padding: 20rem 0;
 }
 
 /* ----- Footer ----- */
 footer {
- 	background: var(--background1);
-	background: var(--background2);
-	background: var(--background3);
-	background: var(--background4);
-	background: var(--background5);
-	background: var(--background6);
-	background: var(--background7);
-	filter: var(--filter);
+ 	background: var(--color2);
 	border-top: 2px solid var(--color4);
 }
 footer p {
