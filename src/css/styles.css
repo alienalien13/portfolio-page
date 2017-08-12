@@ -1,0 +1,196 @@
+:root{
+--color1: #e5bbef;
+--color2: #8ed3e8;
+--header-text-color: #4c3f77;
+--body-color: #fefefe;
+}
+/*----- CSS reset -----*/
+#about, #contacts {
+	display: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption,tbody, tfoot, thead, tr, th,
+td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, wrap, summary,time, mark, audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.containers {
+	margin: 0 auto;
+	min-width: 464px;
+}
+
+/* ----- Fonts ----- */
+body {
+	font: 300 16px/22px "Verdana","Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+	sans-serif;
+	min-height: 100vh;
+}
+
+/* ----- Navigation ----- */
+nav {
+	text-align: right;
+	padding-right: 55px;
+}
+nav li {
+	display: inline-block;
+	margin: 0px;
+	vertical-align: top;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+nav li:last-child {
+	margin-right: 0;
+}
+.nav {
+	display: block;
+	padding: 30px 20px;
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: color 1s;
+	-o-transition: color 1s;
+	transition: background 1s, color 1s;
+}
+.nav:hover {
+	background: var(--body-color);
+	color: #000;
+}
+header .nav:hover {
+	background: var(--body-color);
+	color: var(--header-text-color);
+}
+header .a:hover {
+	background: var(--body-color);
+	color: var(--header-text-color);
+}
+/* ----- END ----- */
+
+/* ----- Header ----- */
+header{
+	text-align: center;
+	color: #000;
+	background: var(--color1);
+}
+header h1, footer h1{
+	margin: 30px 55px;
+	font-size: 30px;
+	float: left;
+	color: #051126;
+}
+.ilhan{
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: white;
+	font-weight: 600;
+}
+
+header nav li{
+	font-size: 20px;
+}
+/* ----- END ----- */
+
+/* - - - - - MAIN CONTENT - - - - - */
+body{
+	background: var(--body-color); 
+	margin: 0; 
+	padding: 0;
+}
+img{
+	margin: 0; 
+	padding: 0; 
+	vertical-align: middle; 
+	border: none;
+}
+.main{
+	margin: 20px;
+	padding: 20px; 
+	background: #fff; 
+	border-radius: 3px;
+
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.projects{
+	padding: 5px;
+	border:2px solid #ebebeb;
+	border-radius: 5px;
+	margin: 15px;
+	flex: 1 1 30%;
+	transition: box-shadow .5s;
+}
+
+@media (min-width: 1415px){
+	.projects{
+		padding: 5px;
+		border:2px solid #ebebeb;
+		border-radius: 5px;
+		margin: 15px;
+		flex: 1 1 40%;
+		transition: box-shadow .5s;
+	}
+}
+
+.projects a, .projects a:visited{
+	color: black;
+}
+.projects:hover {
+	box-shadow: 0 0 20px rgba(76, 63, 119, 1);
+}
+.projects img{
+	width: 100%;
+	border-radius: 4px;
+}
+/* .projects h3{
+	tex
+} */
+.text p, .text h3{
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+/* - - - - - END - - - - - */
+
+#about, #contacts {
+	width: 100%;
+	display: none;
+}
+#about p{
+	width: 117px;
+	margin: auto;
+}
+.vcard {
+	width: 286px;
+	margin: auto;
+	text-align: center;
+}
+#about p, .vcard{
+	display: block;
+	padding: 20rem 0;
+}
+
+/* ----- Footer ----- */
+footer {
+ 	background: var(--color2);
+	border-top: 2px solid var(--color4);
+}
+footer p {
+	float: left;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 55px;
+}
