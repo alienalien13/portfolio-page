@@ -1,21 +1,19 @@
 import './styles.css'
 import './circles-effect.css'
+import './header-title.css'
+import './ilhan-op.css'
 
 var home = document.getElementById("list"),
 	about = document.getElementById("about"),
 	contacts = document.getElementById("contacts"),
 	homeBut = document.getElementById("homeBut"),
 	aboutBut = document.getElementById("aboutBut"),
-	contactsBut = document.getElementById("contactBut")/* ,
-	homeButt = document.getElementById("homeButt"),
-	aboutButt = document.getElementById("aboutButt"),
-	contactsButt = document.getElementById("contactButt"); */
+	contactsBut = document.getElementById("contactBut");
 
 var showHome = function() {
 	home.style.display = "flex";
 	about.style.display = "none";
 	contacts.style.display = "none";
-	console.log("home");
 }
 
 var showAbout = function() {
@@ -33,6 +31,3 @@ var showContacts = function() {
 homeBut.addEventListener('click', showHome);
 aboutBut.addEventListener('click', showAbout);
 contactsBut.addEventListener('click', showContacts);
-/* homeButt.addEventListener('click', showHome);
-aboutButt.addEventListener('click', showAbout);
-contactsButt.addEventListener('click', showContacts); */
