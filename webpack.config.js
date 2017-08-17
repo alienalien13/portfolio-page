@@ -107,7 +107,7 @@ const prod = merge(
 			new ImageminPlugin({
 				test: /\.(jpe?g|gif|png|svg)$/i,
 				optipng: {
-					optimizationLevel: 7
+					optimizationLevel: 3
 				},
 				jpegtran: {
 					progressice: true
