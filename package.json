@@ -12,6 +12,7 @@
     "deploy": "git add . && git commit -a -m 'autocommit' && git push heroku master && heroku ps:scale web=1 && heroku open"
   },
   "devDependencies": {
+    "copy": "^0.3.0",
     "css-loader": "^0.28.4",
     "cssnano": "^3.10.0",
     "extract-text-webpack-plugin": "^2.1.2",

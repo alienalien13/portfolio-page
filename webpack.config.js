@@ -4,7 +4,8 @@ const webpack = require('webpack'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
 	merge = require('webpack-merge'),
 	UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
-	ImageminPlugin = require('imagemin-webpack-plugin').default
+	ImageminPlugin = require('imagemin-webpack-plugin').default,
+	copy = require('copy')
 
 const PATHS = {
 	src: path.join(__dirname, "src"),
@@ -105,10 +106,12 @@ const prod = merge(
 	}
 )
 
-module.exports = function(env) {
-	if (env === 'development'){
-		return dev
-	} else if (env === 'production'){
+module.exports = env => {
+	if (env === 'development') return dev
+	if (env === 'production') {
+		copy(PATHS.src + '/google885327df46f587f4.html', 'dist', function(err, file) {
+			
+		  })
 		return prod
 	}
 }
