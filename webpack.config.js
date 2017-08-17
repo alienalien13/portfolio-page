@@ -37,6 +37,10 @@ const common = {
 				options: {
 					pretty: true
 				}
+			},
+			{
+				test:/\.jsx?$/i,
+				loader: 'babel-loader'
 			}
 		]
 	},

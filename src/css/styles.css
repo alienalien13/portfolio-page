@@ -102,11 +102,7 @@ img{
 	padding: 20px; 
 	background: #fff; 
 	border-radius: 3px;
-
 	min-height: 100vh;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
