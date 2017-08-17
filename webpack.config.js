@@ -109,9 +109,7 @@ const prod = merge(
 module.exports = env => {
 	if (env === 'development') return dev
 	if (env === 'production') {
-		copy(PATHS.src + '/google885327df46f587f4.html', 'dist', function(err, file) {
-			
-		  })
+		copy('google885327df46f587f4.html', 'dist', function(err, file) {/*  */})
 		return prod
 	}
 }

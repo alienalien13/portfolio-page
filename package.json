@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
-    "dev": "rimraf ./dist && webpack --env development --watch",
+    "dev": "rimraf ./dist && webpack --env development",
     "prod": "rimraf ./dist && webpack --env production",
     "serv": "webpack-dev-server --env development",
     "deploy": "git add . && git commit -a -m 'autocommit' && git push heroku master && heroku ps:scale web=1 && heroku open"
