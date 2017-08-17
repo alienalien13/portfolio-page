@@ -11,7 +11,9 @@ app.get('/', function(req,res){
 app.get('/google885327df46f587f4.html', function(req,res){
 	res.sendFile('google885327df46f587f4.html')
 });
-
+app.get('/images/me.jpg', function(req,res){
+	res.sendFile('images/me.jpg')
+});
 app.listen(app.get('port'), function() {
 	console.log('Node app is running on port', app.get('port'));
 });
