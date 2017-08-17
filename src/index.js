@@ -46,9 +46,14 @@ function init(){
 
 }
 
-window.onresize = imgProportions;
+//window.onresize = imgProportions;
+window.onresize = function(){
+	var about = document.getElementById("about");
+	if (about.style.display === 'grid') return imgProportions()
+}
 
 function imgProportions(){
+	console.log('active');
 	var imgsAbout = document.getElementsByClassName("img");
 	for (let i in imgsAbout){
 		if (typeof(imgsAbout[i]) === 'object'){

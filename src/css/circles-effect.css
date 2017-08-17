@@ -36,48 +36,55 @@
 	width: 100%;
 	height: 100px;
 }
-
-
 .c-eff-wrap{
-	/* position: absolute; */
-	top: 171px;
-	left: calc(50% - 450px);
 	width: 900px;
 	height: 60px;
 }
 @media (max-width: 586px){
 	.header-effect{
 		position: absolute;
+		overflow-x: hidden;
+		overflow-y: visible;
 		top: 337px;
-		left: calc(50% - 450px);
-		width: 900px;
 		height: 100px;
+		width: 100%;
+	}
+	.c-eff-wrap{
+		position: absolute;
+		left: calc(50% - 450px);
 	}
 }
 @media (min-width: 586px) and (max-width: 899px){
 	.header-effect{
 		position: absolute;
+		overflow-x: hidden;
+		overflow-y: visible;
 		top: 256.5px;
-		left: calc(50% - 450px);
-		width: 900px;
 		height: 100px;
+		width: 100%;
+	}
+	.c-eff-wrap{
+		position: absolute;
+		left: calc(50% - 450px);
 	}
 }
 @media (min-width: 900px) and (max-width: 1066px){
 	.header-effect{
 		position: absolute;
+		overflow-x: hidden;
+		overflow-y: visible;
 		top: 258px;
 		left: calc(50% - 450px);
-		width: 900px;
 		height: 100px;
 	}
 }
 @media (min-width: 1066px){
 	.header-effect{
 		position: absolute;
+		overflow-x: hidden;
+		overflow-y: visible;
 		top: 175px;
 		left: calc(50% - 450px);
-		width: 900px;
 		height: 100px;
 	}
 }
