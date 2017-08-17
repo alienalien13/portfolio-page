@@ -1,17 +1,15 @@
 .circles-on-wrap{
 	position: relative;
+	top: 11px;
 }
 .circles-on{
-	margin: 0 27px;
+	margin: 0 21px;
 	padding: 0;
 	display: inline-block;
 	width: 0;
 	height: 0;
 	border-radius: 30px;
- 	border-top:30px solid #8ed3e8;
-	border-bottom:30px solid #8ed3e8;
-	border-right:30px solid #8ed3e8;
-	border-left:30px solid #8ed3e8;
+	border:30px solid #8ed3e8;
 }
 .circles-off-wrap{
 	position: relative;
@@ -19,16 +17,13 @@
 	z-index:6!important;
 }
 .circles-off{
-	margin: 0 27px;
+	margin: 0 21px;
 	padding: 0;
 	display: inline-block;
 	width: 0;
 	height: 0;
 	border-radius: 30px;
-	border-top:30px solid #fefefe;
-	border-bottom:30px solid #fefefe;
-	border-right:30px solid #fefefe;
-	border-left:30px solid #fefefe;
+	border:30px solid #fefefe;
 }
 
 .c-eff-wrap{
@@ -38,7 +33,7 @@
 	width: 900px;
 	height: 60px;
 }
-@media (max-width: 586px){
+@media (max-width: 596px){
 	.c-eff-wrap{
 		position: absolute;
 		top: 337px;
@@ -47,7 +42,7 @@
 		height: 60px;
 	}
 }
-@media (min-width: 586px) and (max-width: 899px){
+@media (min-width: 596px) and (max-width: 899px){
 	.c-eff-wrap{
 		position: absolute;
 		top: 256.5px;
@@ -56,7 +51,7 @@
 		height: 60px;
 	}
 }
-@media (min-width: 900px) and (max-width: 1066px){
+@media (min-width: 900px) and (max-width: 1094px){
 	.c-eff-wrap{
 		position: absolute;
 		top: 258px;
@@ -65,7 +60,7 @@
 		height: 60px;
 	}
 }
-@media (min-width: 1066px){
+@media (min-width: 1094px){
 	.c-eff-wrap{
 		position: absolute;
 		top: 175px;

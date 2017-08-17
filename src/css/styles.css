@@ -79,18 +79,6 @@ header{
 	color: #000;
 	background: var(--color1);
 }
-header h1, footer h1{
-	margin: 30px 55px;
-	font-size: 30px;
-	float: left;
-	color: #051126;
-}
-.ilhan{
-	text-transform: uppercase;
-	font-size: 2rem;
-	color: white;
-	font-weight: 600;
-}
 
 header nav li{
 	font-size: 20px;
@@ -110,7 +98,7 @@ img{
 	border: none;
 }
 .main{
-	margin: 20px;
+	margin: 30px;
 	padding: 20px; 
 	background: #fff; 
 	border-radius: 3px;

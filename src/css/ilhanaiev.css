@@ -1,0 +1,28 @@
+header h1, footer h1{
+	margin: 30px 55px;
+	font-size: 30px;
+	float: left;
+	color: #051126;
+}
+.ilhan{
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: white;
+	font-weight: 600;
+}
+.ilhan-op{
+	position: absolute;
+	top: +0.125rem;
+	left: -0.125rem;
+	margin: 30px 55px;
+	font-size: 30px;
+	float: left;
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: var(--header-text-color);
+	font-weight: 600;
+}
+
+@media (max-width: 586px){
+	/*  */
+}

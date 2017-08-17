@@ -1,5 +1,5 @@
 import './css/styles.css'
-import './css/ilhan-op.css'
+import './css/ilhanaiev.css'
 import './css/circles-effect.css'
 import './css/header-title.css'
 
@@ -9,12 +9,9 @@ function init(){
 	var home = document.getElementById("list"),
 		about = document.getElementById("about"),
 		contacts = document.getElementById("contacts"),
-		homeBut = document.getElementById("homeBut"),
-		aboutBut = document.getElementById("aboutBut"),
-		contactsBut = document.getElementById("contactBut"),
-		homeButt = document.getElementById("homeButt"),
-		aboutButt = document.getElementById("aboutButt"),
-		contactsButt = document.getElementById("contactButt");
+		homeBut = document.getElementsByClassName("homeBut"),
+		aboutBut = document.getElementsByClassName("aboutBut"),
+		contactsBut = document.getElementsByClassName("contactBut");
 
 	var showHome = function() {
 		home.style.display = "flex";
@@ -34,10 +31,13 @@ function init(){
 		contacts.style.display = "block";
 	}
 
-	homeBut.addEventListener('click', showHome);
-	aboutBut.addEventListener('click', showAbout);
-	contactsBut.addEventListener('click', showContacts);
-	homeButt.addEventListener('click', showHome);
-	aboutButt.addEventListener('click', showAbout);
-	contactsButt.addEventListener('click', showContacts);
+	for (let i in homeBut){
+		if (typeof(homeBut[i]) === 'object') homeBut[i].addEventListener('click', showHome);
+	}
+	for (let i in aboutBut){
+		if (typeof(aboutBut[i]) === 'object') aboutBut[i].addEventListener('click', showAbout);
+	}
+	for (let i in contactsBut){
+		if (typeof(contactsBut[i]) === 'object') contactsBut[i].addEventListener('click', showContacts);
+	}
 }
