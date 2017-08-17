@@ -30,13 +30,20 @@ const common = {
 						}
 					}
 				]
+			},
+			{
+				test: /\.pug$/,
+				loader: 'pug-loader',
+				options: {
+					pretty: true
+				}
 			}
 		]
 	},
 	plugins: [
 		new HtmlPlugin({
 				filename: 'index.html',
-				template: PATHS.src + '/main.html'
+				template: PATHS.src + '/view/index.pug'
 		}),
 		new ExtractTextPlugin('./style.css')
 	],
@@ -83,7 +90,7 @@ const prod = merge(
 		},
 		plugins: [
 			new HtmlPlugin({
-				template: PATHS.src + '/main.html',
+				template: PATHS.src + '/view/index.pug',
 				minify: {
 					collapseInlineTagWhitespace: true,
 					collapseWhitespace: true,
