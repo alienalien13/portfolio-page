@@ -28,5 +28,14 @@
   },
   "dependencies": {
     "express": "^4.15.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ilhanaiev.herokuapp.com/"
+  },
+  "keywords": [
+    "Ilhanaiev",
+    "Dmytro Ilhanaiev",
+    "Ilhanaiev portfolio"
+  ]
 }
