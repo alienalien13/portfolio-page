@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node app.js",
     "dev": "rimraf ./dist && webpack --env development --watch",
     "prod": "rimraf ./dist && webpack --env production",
     "serv": "webpack-dev-server --env development"
@@ -24,5 +25,8 @@
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0",
     "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
   }
 }
