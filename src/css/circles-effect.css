@@ -63,7 +63,7 @@
 		height: 100px;
 	}
 }
-@media (min-width: 900px) and (max-width: 1094px){
+@media (min-width: 900px) and (max-width: 1066px){
 	.header-effect{
 		position: absolute;
 		top: 258px;
@@ -72,7 +72,7 @@
 		height: 100px;
 	}
 }
-@media (min-width: 1094px){
+@media (min-width: 1066px){
 	.header-effect{
 		position: absolute;
 		top: 175px;
