@@ -45,7 +45,7 @@
 	width: 900px;
 	height: 60px;
 }
-@media (max-width: 613px){
+@media (max-width: 586px){
 	.header-effect{
 		position: absolute;
 		top: 337px;
@@ -54,7 +54,7 @@
 		height: 100px;
 	}
 }
-@media (min-width: 613px) and (max-width: 899px){
+@media (min-width: 586px) and (max-width: 899px){
 	.header-effect{
 		position: absolute;
 		top: 256.5px;
