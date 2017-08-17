@@ -2,6 +2,7 @@ import './css/styles.css'
 import './css/ilhanaiev.css'
 import './css/circles-effect.css'
 import './css/header-title.css'
+import './css/about.css'
 
 window.onload = init;
 
@@ -21,8 +22,10 @@ function init(){
 
 	var showAbout = function() {
 		home.style.display = "none";
-		about.style.display = "block";
+		about.style.display = "grid";
 		contacts.style.display = "none";
+		
+		imgProportions();
 	}
 
 	var showContacts = function() {
@@ -39,5 +42,17 @@ function init(){
 	}
 	for (let i in contactsBut){
 		if (typeof(contactsBut[i]) === 'object') contactsBut[i].addEventListener('click', showContacts);
+	}
+
+}
+
+window.onresize = imgProportions;
+
+function imgProportions(){
+	var imgsAbout = document.getElementsByClassName("img");
+	for (let i in imgsAbout){
+		if (typeof(imgsAbout[i]) === 'object'){
+			imgsAbout[i].style.height = imgsAbout[i].clientWidth + 'px';
+		}
 	}
 }

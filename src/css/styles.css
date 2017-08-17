@@ -1,6 +1,7 @@
 :root{
 --color1: #e5bbef;
 --color2: #8ed3e8;
+--color2-darker: #1780A1;
 --header-text-color: #4c3f77;
 --body-color: #fefefe;
 }
@@ -137,9 +138,6 @@ img{
 	width: 100%;
 	border-radius: 4px;
 }
-/* .projects h3{
-	tex
-} */
 .text p, .text h3{
 	float: left;
 	margin-top: 10px;
@@ -149,32 +147,29 @@ img{
 }
 /* - - - - - END - - - - - */
 
-#about, #contacts {
+#contacts {
 	width: 100%;
 	display: none;
 }
-#about p{
-	width: 117px;
-	margin: auto;
-}
 .vcard {
-	width: 286px;
+	width: 290px;
 	margin: auto;
 	text-align: center;
-}
-#about p, .vcard{
 	display: block;
 	padding: 20rem 0;
 }
 
 /* ----- Footer ----- */
 footer {
- 	background: var(--color2);
-	border-top: 2px solid var(--color4);
+ 	background: var(--color2-darker);
+	box-shadow: 0px -2px 1px var(--header-text-color);
 }
 footer p {
 	float: left;
 	font-size: 20px;
 	margin-top: 30px;
 	margin-left: 55px;
+}
+.footerIlhan{
+	color: white;
 }

@@ -21,7 +21,7 @@ const common = {
 	module: {
 		rules: [
 			{
-				test: /\.(jpe?g|gif|png|svg)$/,
+				test: /\.(jpe?g|gif|png|svg|ico)$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -97,15 +97,14 @@ const prod = merge(
 				template: PATHS.src + '/view/index.pug',
 				minify: {
 					collapseInlineTagWhitespace: true,
-					collapseWhitespace: true,
-					removeComments: true
+					collapseWhitespace: true
 				}
 			}),
 			new UglifyJsPlugin({
 				comments: false
 			}),
 			new ImageminPlugin({
-				test: /\.(jpe?g|gif|png|svg)$/i,
+				test: /\.(jpe?g|gif|png|svg|ico)$/i,
 				optipng: {
 					optimizationLevel: 3
 				},

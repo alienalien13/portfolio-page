@@ -13,16 +13,16 @@
 .title{
 	font-weight: 600;
 	top: 9.5rem;
-	left: calc(50% - 413px);
-	font-size: 6rem;
+	left: calc(50% - 420px);
+	font-size: 6.1rem;
 	position: absolute;
 	z-index: 7 !important;
 }
 .title-op{
 	font-weight: 600;
 	top: 9.3rem;
-	left: calc(50% - 407px);
-	font-size: 6rem;
+	left: calc(50% - 415px);
+	font-size: 6.1rem;
 	position: absolute;
 	z-index: 4;
 	color: white;
@@ -30,7 +30,7 @@
 header h2:hover{
 	cursor: default;
 }
-@media (max-width: 596px){
+@media (max-width: 613px){
 	.title{
 		font-weight: 600;
 		top: 17.5rem;
@@ -49,7 +49,7 @@ header h2:hover{
 		color: white;
 	}
 }
-@media (min-width: 596px) and (max-width: 899px){
+@media (min-width: 613px) and (max-width: 899px){
 	.title{
 		font-weight: 600;
 		top: 12.5rem;
@@ -72,16 +72,16 @@ header h2:hover{
 	.title{
 		font-weight: 600;
 		top: 14.6rem;
-		left: calc(50% - 413px);
-		font-size: 6rem;
+		left: calc(50% - 420px);
+		font-size: 6.1rem;
 		position: absolute;
 		z-index: 5;
 	}
 	.title-op{
 		font-weight: 600;
 		top: 14.3rem;
-		left: calc(50% - 407px);
-		font-size: 6rem;
+		left: calc(50% - 415px);
+		font-size: 6.1rem;
 		position: absolute;
 		z-index: 4;
 		color: white;
@@ -91,16 +91,16 @@ header h2:hover{
 	.title{
 		font-weight: 600;
 		top: 9.5rem;
-		left: calc(50% - 413px);
-		font-size: 6rem;
+		left: calc(50% - 420px);
+		font-size: 6.1rem;
 		position: absolute;
 		z-index: 5;
 	}
 	.title-op{
 		font-weight: 600;
 		top: 9.3rem;
-		left: calc(50% - 407px);
-		font-size: 6rem;
+		left: calc(50% - 415px);
+		font-size: 6.1rem;
 		position: absolute;
 		z-index: 4;
 		color: white;
