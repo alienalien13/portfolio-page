@@ -52,6 +52,7 @@ window.onresize = function(){
 	if (about.style.display === 'grid') return imgProportions()
 }
 
+//aboutme images proportions
 function imgProportions(){
 	console.log('active');
 	var imgsAbout = document.getElementsByClassName("img");
