@@ -115,27 +115,30 @@ img{
 	border:2px solid #ebebeb;
 	border-radius: 5px;
 	margin: 15px;
+	/* 1 in the row */
 	flex: 1 1 100%;  /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
 	transition: box-shadow .5s;
 }
 
 
-@media (min-width: 940px){
+@media screen and (min-width: 940px) and (max-width: 1415px){
 	.projects{
 		padding: 5px;
 		border:2px solid #ebebeb;
 		border-radius: 5px;
 		margin: 15px;
-		flex: 1 1 20%; /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
+		/* 3 in the row */
+		flex: 1 1 26%; /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
 		transition: box-shadow .5s;
 	}
 }
-@media (min-width: 1415px){
+@media screen and (min-width: 1415px){
 	.projects{
 		padding: 5px;
 		border:2px solid #ebebeb;
 		border-radius: 5px;
 		margin: 15px;
+		/* 4 in the row */
 		flex: 1 1 20%; /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
 		transition: box-shadow .5s;
 	}
