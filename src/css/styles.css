@@ -53,6 +53,8 @@ nav li:last-child {
 }
 .nav {
 	display: block;
+/* 	float: left;
+	list-style: none; */
 	padding: 30px 20px;
 	text-decoration: none;
 	color: #fff;
@@ -113,17 +115,28 @@ img{
 	border:2px solid #ebebeb;
 	border-radius: 5px;
 	margin: 15px;
-	flex: 1 1 30%;
+	flex: 1 1 100%;  /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
 	transition: box-shadow .5s;
 }
 
+
+@media (min-width: 940px){
+	.projects{
+		padding: 5px;
+		border:2px solid #ebebeb;
+		border-radius: 5px;
+		margin: 15px;
+		flex: 1 1 20%; /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
+		transition: box-shadow .5s;
+	}
+}
 @media (min-width: 1415px){
 	.projects{
 		padding: 5px;
 		border:2px solid #ebebeb;
 		border-radius: 5px;
 		margin: 15px;
-		flex: 1 1 40%;
+		flex: 1 1 20%; /* --- ---- ----- --------  FLEX --- ---- ----- --- ----  */
 		transition: box-shadow .5s;
 	}
 }
@@ -152,7 +165,7 @@ img{
 	display: none;
 }
 .vcard {
-	width: 290px;
+	width: 300px;
 	margin: auto;
 	text-align: center;
 	display: block;
