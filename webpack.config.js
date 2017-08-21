@@ -41,6 +41,15 @@ const common = {
 			{
 				test:/\.jsx?$/i,
 				loader: 'babel-loader'
+			},
+			{
+				test: /\.css$/,
+				use: ExtractTextPlugin.extract({
+					use: [
+						'css-loader',
+						'postcss-loader'
+					]
+				})
 			}
 		]
 	},
@@ -52,44 +61,18 @@ const common = {
 		new ExtractTextPlugin('./style.css')
 	],
 	devServer: {
-		contentBase: path.join(__dirname, "dist"),
-		compress: true,
+		/* contentBase: path.join(__dirname, "dist"),
+		compress: true, */
 		port: 9000
 	}
 }
-
-const dev = merge(
-	common,
-	{
-		module: {
-			rules: [
-				{
-					test: /\.css$/,
-					use: ExtractTextPlugin.extract({
-						use: [
-							'css-loader'
-						]
-					})
-				}
-			]
-		}
-	}
-)
 
 const prod = merge(
 	common,
 	{
 		module: {
 			rules: [
-				{
-					test: /\.css$/,
-					use: ExtractTextPlugin.extract({
-						use: [
-							'css-loader',
-							'postcss-loader'
-						]
-					})
-				}
+
 			]
 		},
 		plugins: [
@@ -117,7 +100,7 @@ const prod = merge(
 )
 
 module.exports = env => {
-	if (env === 'development') return dev
+	if (env === 'development') return common
 	if (env === 'production') {
 		copy('google885327df46f587f4.html', 'dist', function(err, file) {/*  */})
 		return prod

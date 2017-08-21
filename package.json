@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "author": "Dmytro Ilhanaiev",
   "license": "MIT",
   "scripts": {
@@ -26,6 +26,7 @@
     "imagemin-webpack-plugin": "^1.4.4",
     "img-loader": "^2.0.0",
     "jquery": "^3.2.1",
+    "nodemon": "^1.11.0",
     "postcss-loader": "^2.0.6",
     "pug": "^2.0.0-rc.3",
     "pug-loader": "^2.3.0",

@@ -24,5 +24,7 @@ header h1, footer h1{
 }
 
 @media (max-width: 596px){
-	/*  */
+	/* .ilhan, .ilhan-op{
+		font-size: 15px;
+	} */
 }
