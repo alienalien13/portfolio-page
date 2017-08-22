@@ -10,7 +10,7 @@
     "prod": "rimraf ./dist && webpack --env production",
     "serv": "webpack-dev-server --env development",
     "deploy": "git push heroku master && heroku ps:scale web=1 && heroku open",
-    "fast": "yarn prod && yarn deploy"
+    "fast": "yarn prod && git add . && git commit -a -m 'autocommit' &&  yarn deploy"
   },
   "devDependencies": {
     "babel-loader": "^7.1.1",
