@@ -9,16 +9,6 @@
 .about{
 	background-color: rgba(27, 5, 140, 0.43);
 }
-#about p{
-	text-align: justify;
-}
-.img{
-	width: 100%;
-	min-height: 100px;
-	min-width: 100px;
-	background-size: 100%;
-	border-radius: 50%;
-}
 .ime{
 	background-image: url('../images/me.jpg');
 }
@@ -26,8 +16,29 @@
 	background-image: url('../images/dev-process.png');
 }
 @media screen and (max-width: 1030px){
+	.img{
+		width: 80%;
+		margin-left: 20%;
+		min-height: 100px;
+		min-width: 100px;
+		background-size: 100%;
+		border-radius: 50%;
+	}
 	#about p{
 		display: block;
 		width: 80%;
+		text-align: justify;
+	}
+}
+@media screen and (min-width: 1030px){
+	.img{
+		width: 100%;
+		min-height: 100px;
+		min-width: 100px;
+		background-size: 100%;
+		border-radius: 50%;
+	}
+	#about p{
+		text-align: justify;
 	}
 }

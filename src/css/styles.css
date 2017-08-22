@@ -39,7 +39,18 @@ body {
 /* ----- Navigation ----- */
 nav {
 	text-align: right;
-	padding-right: 55px;
+}
+@media screen and (max-width: 1096px){
+	nav {
+		text-align: right;
+		padding-right: 0px;
+		padding: 0;
+	}
+}
+@media screen and (min-width: 1096px){
+	nav{
+		padding-right: 55px;
+	}
 }
 nav li {
 	display: inline-block;
@@ -53,8 +64,6 @@ nav li:last-child {
 }
 .nav {
 	display: block;
-/* 	float: left;
-	list-style: none; */
 	padding: 30px 20px;
 	text-decoration: none;
 	color: #fff;

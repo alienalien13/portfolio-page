@@ -6,7 +6,8 @@
 		text-align: center;
 	}
 	.ilhan{
-		padding: 20px 0px;
+		padding: 40px 0px;
+		font-size: 1.5rem;
 	}
 	.title{
 		font-weight: 600;
@@ -33,7 +34,7 @@
 	}
 	.header-effect{
 		position: absolute;
-		top: 635px;
+		top: 675px;
 		height: 100px;
 		width: 100%;
 		overflow: hidden;
@@ -45,5 +46,13 @@
 	nav {
 		padding: 0;
 		margin: 0;
+	}
+	.footerIlhan{
+		padding: 40px 0;
+		margin: 0;
+		display: block;
+		width: 100%;
+		color: #000;
+		text-align: center;
 	}
 }

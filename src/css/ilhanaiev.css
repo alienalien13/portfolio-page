@@ -25,8 +25,4 @@ header h1, footer h1{
 		float: left;
 		color: #051126;
 	}
-	nav {
-		text-align: right;
-		padding-right: 0px;
-	}
 }
