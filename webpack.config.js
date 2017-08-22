@@ -70,11 +70,6 @@ const common = {
 const prod = merge(
 	common,
 	{
-		module: {
-			rules: [
-
-			]
-		},
 		plugins: [
 			new HtmlPlugin({
 				template: PATHS.src + '/view/index.pug',
