@@ -7,102 +7,31 @@
 	border-bottom: 20px solid #8ed3e8;
 	transition: color .5s;
 	text-align: center;
+	text-shadow: 3px -3px 0 white;
 	box-shadow: inset 0px 2px 1px var(--header-text-color),
 		0px 2px 1px var(--header-text-color)
-}
-.title{
-	font-weight: 600;
-	top: 9.5rem;
-	left: calc(50% - 420px);
-	font-size: 6.1rem;
-	position: absolute;
-	z-index: 7 !important;
-}
-.title-op{
-	font-weight: 600;
-	top: 9.3rem;
-	left: calc(50% - 415px);
-	font-size: 6.1rem;
-	position: absolute;
-	z-index: 4;
-	color: white;
 }
 header h2:hover{
 	cursor: default;
 }
-@media (max-width: 586px){
+
+@media screen and (min-width: 771px) and (max-width: 1096px){
 	.title{
 		font-weight: 600;
-		top: 17.5rem;
-		left: calc(50% - 172px);
-		font-size: 2.5rem;
-		position: absolute;
-		z-index: 5;
-	}
-	.title-op{
-		font-weight: 600;
-		top: 17.4rem;
-		left: calc(50% - 170px);
-		font-size: 2.5rem;
-		position: absolute;
-		z-index: 4;
-		color: white;
-	}
-}
-@media (min-width: 586px) and (max-width: 899px){
-	.title{
-		font-weight: 600;
-		top: 12.5rem;
+		top: 8.5rem;
 		left: calc(50% - 275px);
 		font-size: 4rem;
 		position: absolute;
 		z-index: 5;
 	}
-	.title-op{
-		font-weight: 600;
-		top: 12.4rem;
-		left: calc(50% - 272px);
-		font-size: 4rem;
-		position: absolute;
-		z-index: 4;
-		color: white;
-	}
 }
-@media (min-width: 900px) and (max-width: 1066px){
+@media screen and (min-width: 1096px){
 	.title{
 		font-weight: 600;
-		top: 14.6rem;
+		top: 7.5rem;
 		left: calc(50% - 420px);
 		font-size: 6.1rem;
 		position: absolute;
 		z-index: 5;
-	}
-	.title-op{
-		font-weight: 600;
-		top: 14.3rem;
-		left: calc(50% - 415px);
-		font-size: 6.1rem;
-		position: absolute;
-		z-index: 4;
-		color: white;
-	}
-}
-@media (min-width: 1066px){
-	.title{
-		font-weight: 600;
-		top: 9.5rem;
-		left: calc(50% - 420px);
-		font-size: 6.1rem;
-		position: absolute;
-		z-index: 5;
-	}
-	.title-op{
-		font-weight: 600;
-		top: 9.3rem;
-		left: calc(50% - 415px);
-		font-size: 6.1rem;
-		position: absolute;
-		z-index: 4;
-		color: white;
 	}
 }

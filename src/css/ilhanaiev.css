@@ -1,30 +1,32 @@
 header h1, footer h1{
 	margin: 30px 55px;
-	font-size: 30px;
 	float: left;
 	color: #051126;
 }
 .ilhan{
 	text-transform: uppercase;
 	font-size: 2rem;
-	color: white;
-	font-weight: 600;
-}
-.ilhan-op{
-	position: absolute;
-	top: +0.125rem;
-	left: -0.125rem;
-	margin: 30px 55px;
-	font-size: 30px;
-	float: left;
-	text-transform: uppercase;
-	font-size: 2rem;
 	color: var(--header-text-color);
 	font-weight: 600;
+	text-shadow: 2px -2px 0 white; 
 }
 
-@media (max-width: 596px){
-	/* .ilhan, .ilhan-op{
+@media screen and (max-width: 1096px){
+	.ilhan{
+		text-transform: uppercase;
+		font-size: 1rem;
+		color: var(--header-text-color);
+		font-weight: 600;
+		text-shadow: 1px -1px 0 white; 
+	}
+	header h1, footer h1, footer p{
+		margin: 30px 10px;
 		font-size: 15px;
-	} */
+		float: left;
+		color: #051126;
+	}
+	nav {
+		text-align: right;
+		padding-right: 0px;
+	}
 }

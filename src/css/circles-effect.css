@@ -31,67 +31,25 @@
 /* main wrap */
 .header-effect{
 	position: absolute;
-	overflow-x: hidden;
-	overflow-y: visible;
 	width: 100%;
+	top: 175px;
 	height: 100px;
+	overflow: hidden;
 }
 .c-eff-wrap{
 	width: 900px;
-	height: 60px;
+	height: 150px;
+	position: absolute;
+	left: calc(50% - 450px);
 }
-@media (max-width: 586px){
+
+@media screen and (min-width: 770px){
 	.header-effect{
 		position: absolute;
-		overflow-x: hidden;
-		overflow-y: visible;
-		top: 337px;
-		height: 100px;
-		width: 100%;
-	}
-	.c-eff-wrap{
-		position: absolute;
-		left: calc(50% - 450px);
-	}
-}
-@media (min-width: 586px) and (max-width: 899px){
-	.header-effect{
-		position: absolute;
-		overflow-x: hidden;
-		overflow-y: visible;
-		top: 256.5px;
-		height: 100px;
-		width: 100%;
-	}
-	.c-eff-wrap{
-		position: absolute;
-		left: calc(50% - 450px);
-	}
-}
-@media (min-width: 900px) and (max-width: 1066px){
-	.header-effect{
-		position: absolute;
-		overflow-x: hidden;
-		overflow-y: visible;
-		top: 258px;
-		/* left: calc(50% - 450px); */
-		height: 100px;
-		width: 100%;
-	}
-	.c-eff-wrap{
-		position: absolute;
-		left: calc(50% - 450px);
-	}
-}
-@media (min-width: 1066px){
-	.header-effect{
-		position: absolute;
-		overflow-x: hidden;
-		overflow-y: visible;
 		top: 175px;
-		/* left: calc(50% - 450px); */
 		height: 100px;
 		width: 100%;
+		overflow: hidden;
 	}
 	.c-eff-wrap{
 		position: absolute;

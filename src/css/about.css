@@ -25,3 +25,9 @@
 .idev{
 	background-image: url('../images/dev-process.png');
 }
+@media screen and (max-width: 1030px){
+	#about p{
+		display: block;
+		width: 80%;
+	}
+}

@@ -3,6 +3,7 @@ import './css/ilhanaiev.css'
 import './css/circles-effect.css'
 import './css/header-title.css'
 import './css/about.css'
+import './css/mob.css'
 
 window.onload = init;
 
